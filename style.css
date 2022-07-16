@@ -2,12 +2,9 @@
 
 html {
 	box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-	box-sizing: inherit;
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: 400;
 }
 
 a {
@@ -31,6 +28,7 @@ h4,
 h5,
 h6 {
 	margin: 0;
+	font-weight: 400;
 }
 
 body {
@@ -45,26 +43,16 @@ section {
 }
 
 p {
-	margin: 0;
 	padding-right: 50px;
-	font-family: 'Roboto';
-	font-style: normal;
-	font-weight: 400;
 	font-size: 20px;
 	line-height: 150%;
 	color: #000402;
 	opacity: 0.8;
-	margin-bottom: 30px;
+	margin: 0 0 30px 0;
 }
 
 .hr {
 	border-top: 1px solid #e6e6e6;
-}
-
-img {
-	transform: rotate(-45deg);
-	width: 20px;
-	height: 20px;
 }
 
 .spoiler {
@@ -72,6 +60,7 @@ img {
 }
 
 .spoiler-active {
+	transition: 0.1s ease all;
 	color: #02818a;
 }
 
@@ -79,14 +68,21 @@ img {
 	display: none;
 }
 
+.btn {
+	display: block;
+	cursor: pointer;
+	transform: rotate(-45deg);
+	width: 20px;
+	height: 20px;
+	transition: 0.3s ease all;
+}
+
 .btnToclose {
+	cursor: pointer;
 	transform: rotate(45deg);
 }
 
 .main-header {
-	font-family: 'Roboto', sans-serif;
-	font-style: normal;
-	font-weight: 400;
 	font-size: 64px;
 	line-height: 100%;
 	letter-spacing: -0.02em;
@@ -101,9 +97,6 @@ img {
 }
 
 h3 {
-	font-family: 'Roboto';
-	font-style: normal;
-	font-weight: 400;
 	font-size: 36px;
 	line-height: 120%;
 }
