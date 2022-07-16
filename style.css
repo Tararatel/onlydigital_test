@@ -218,7 +218,7 @@ h3 {
 	.main-header {
 		font-size: 30px;
 		margin-bottom: 40px;
-		width: 190px;
+		max-width: 190px;
 	}
 
 	.content_wrapper {
